@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "6a4d033ae3824d264e76aad9_7ebe0713-645e-4d3f-871b-413ffc1c8305",
-  "id": "Home_Auth.refreshSession",
+  "gitSyncId": "6a4d033ae3824d264e76aad9_0b7f6a53-7d9d-4d46-8e1a-ee732257add8",
+  "id": "Home_Auth.isAdmin",
   "pluginId": "js-plugin",
   "pluginType": "JS",
   "unpublishedAction": {
@@ -22,8 +22,8 @@
         "key": "body"
       }
     ],
-    "fullyQualifiedName": "Auth.refreshSession",
-    "name": "refreshSession",
+    "fullyQualifiedName": "Auth.isAdmin",
+    "name": "isAdmin",
     "pageId": "Home",
     "runBehaviour": "MANUAL",
     "userSetOnLoad": false

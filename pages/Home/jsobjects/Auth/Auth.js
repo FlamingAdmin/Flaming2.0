@@ -66,7 +66,6 @@ export default {
         return false;
       }
 
-      // Aktualizacja czasu wygaśnięcia sesji w store
       const session = appsmith.store.session;
 
       if (session) {
@@ -87,6 +86,14 @@ export default {
 
       return false;
     }
+  },
+
+  isAdmin() {
+    return appsmith.store.session?.user?.role?.code === "ADMIN";
+  },
+
+  isUser() {
+    return appsmith.store.session?.user?.role?.code === "USER";
   }
 
 }

@@ -1,6 +1,6 @@
 {
-  "gitSyncId": "6a4d033ae3824d264e76aad9_ffc6061f-44f8-4a1f-875f-7697894fd4d1",
-  "id": "Home_Auth.checkSession",
+  "gitSyncId": "6a4d033ae3824d264e76aad9_17c65411-6575-4ea8-9ef9-488cd9bd11d4",
+  "id": "Home_Auth.logout",
   "pluginId": "js-plugin",
   "pluginType": "JS",
   "unpublishedAction": {
@@ -22,8 +22,8 @@
         "key": "body"
       }
     ],
-    "fullyQualifiedName": "Auth.checkSession",
-    "name": "checkSession",
+    "fullyQualifiedName": "Auth.logout",
+    "name": "logout",
     "pageId": "Home",
     "runBehaviour": "MANUAL",
     "userSetOnLoad": false

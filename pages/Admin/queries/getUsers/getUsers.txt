@@ -1,0 +1,11 @@
+SELECT
+    u.id,
+    u.name,
+    u.mail,
+    r.name AS role,
+    r.code AS role_code
+FROM users u
+JOIN roles r
+    ON r.id = u.role_id
+ORDER BY
+    u.name ASC;
