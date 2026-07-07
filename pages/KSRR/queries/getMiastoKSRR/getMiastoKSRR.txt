@@ -1,0 +1,10 @@
+SELECT
+  k.id,
+  k.sym AS kod,
+  m.nazwa_miejsc AS nazwa,
+  'Miasto' AS typ,
+  k.mieszkancy
+FROM ksrr_miasta k
+INNER JOIN miejscowosci m
+  ON m.sym = k.sym
+ORDER BY m.nazwa_miejsc ASC;

@@ -1,0 +1,18 @@
+SELECT DISTINCT
+  dziedziny.nazwa COLLATE "pl-x-icu" AS nazwa,
+  priorytety.numer AS priorytet,
+  priorytety.id AS priorytet_id
+FROM dziedziny
+INNER JOIN wykaz_ekspertow 
+  ON dziedziny.id = wykaz_ekspertow.dziedziny_id
+INNER JOIN eksperci 
+  ON eksperci.id = wykaz_ekspertow.eksperci_id
+INNER JOIN dziedziny_priorytety 
+  ON dziedziny.id = dziedziny_priorytety.dziedziny_id
+INNER JOIN priorytety 
+  ON dziedziny_priorytety.priorytety_id = priorytety.id
+WHERE
+  eksperci.id = {{ eksperciTable.selectedRow.ekspert_id || 0 }}
+ORDER BY
+  priorytet ASC,
+  nazwa ASC;

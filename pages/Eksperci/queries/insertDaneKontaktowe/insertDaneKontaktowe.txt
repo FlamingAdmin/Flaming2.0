@@ -1,0 +1,12 @@
+UPDATE eksperci
+SET
+  email = '{{ inputMail1.text.replaceAll("'", "''") }}',
+  email2 = '{{ inputMail2.text.replaceAll("'", "''") }}',
+  telefon1 = '{{ inputTelefon1.text.replaceAll("'", "''") }}',
+  telefon2 = '{{ inputTelefon2.text.replaceAll("'", "''") }}',
+  umowa = '{{ dropdownUmowa.selectedOptionLabel }}',
+  nr_umowy = '{{ inputNumerUmowy.text.replaceAll("'", "''") }}',
+  data_umowy = {{ datepickerUmowa.selectedDate ? "'" + moment(datepickerUmowa.selectedDate).format("YYYY-MM-DD") + "'" : "NULL" }},
+  uwagi = '{{ inputUwagi.text.replaceAll("'", "''") }}'
+WHERE id = {{ eksperciTable.selectedRow.ekspert_id }}
+RETURNING *;

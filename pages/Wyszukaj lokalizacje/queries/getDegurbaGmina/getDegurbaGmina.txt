@@ -1,0 +1,10 @@
+SELECT
+  j.gus_kod AS gmina_kod,
+  j.nazwa_jst AS gmina,
+  j.degurba_kod,
+  d.opis AS opis_degurba
+FROM jst j
+LEFT JOIN degurba_rodzaje_gmin d
+  ON d.kod::text = j.degurba_kod::text
+WHERE j.gus_kod::text = {{ this.params.gmina_kod }}
+LIMIT 1;

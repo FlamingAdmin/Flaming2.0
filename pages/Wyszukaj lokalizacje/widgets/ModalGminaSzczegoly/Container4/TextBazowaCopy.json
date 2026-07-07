@@ -1,0 +1,56 @@
+{
+  "animateLoading": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 22,
+  "dynamicBindingPathList": [
+    {
+      "key": "truncateButtonColor"
+    },
+    {
+      "key": "fontFamily"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "text"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [],
+  "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
+  "fontSize": "0.875rem",
+  "fontStyle": "BOLD",
+  "isLoading": false,
+  "isVisible": true,
+  "key": "p2zyw35xck",
+  "leftColumn": 44,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 14,
+  "mobileLeftColumn": 34,
+  "mobileRightColumn": 50,
+  "mobileTopRow": 10,
+  "needsErrorInfo": false,
+  "originalBottomRow": 28,
+  "originalTopRow": 24,
+  "overflow": "NONE",
+  "parentColumnSpace": 11.28125,
+  "parentId": "us8mes4skd",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "shouldTruncate": false,
+  "text": "{{\n  getPopulacja.data &&\n  getPopulacja.data.length > 0 &&\n  getPopulacja.data[0].populacja != null\n    ? Number(getPopulacja.data[0].populacja).toLocaleString(\"pl-PL\", {\n        useGrouping: true,\n        minimumFractionDigits: 0,\n        maximumFractionDigits: 0\n      })\n    : \"\"\n}}",
+  "textAlign": "LEFT",
+  "textColor": "#231f20",
+  "topRow": 18,
+  "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "6mjnz4nlcl",
+  "widgetName": "TextBazowaCopy"
+}

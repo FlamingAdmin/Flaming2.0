@@ -1,0 +1,25 @@
+SELECT
+  mp.id,
+  mp.msit_id,
+  mp.gus_kod,
+  j.nazwa_jst AS nazwa,
+  CASE
+    WHEN j.typ_jst = 'gmina' THEN COALESCE(gr.rodzaj_gmi_nazwa, 'Gmina')
+    WHEN j.typ_jst = 'powiat' THEN 'Powiat'
+    ELSE j.typ_jst
+  END AS rodzaj_jst,
+  j.typ_jst
+FROM msit_partnerzy mp
+INNER JOIN jst j
+  ON j.gus_kod = mp.gus_kod
+LEFT JOIN gminy_rodzaje gr
+  ON gr.rodzaj_gmi_kod = j.rodzaj_gmi_kod
+WHERE
+  mp.msit_id = {{ Number(SelectMSIT.selectedOptionValue || -1) }}
+ORDER BY
+  CASE
+    WHEN j.typ_jst = 'gmina' THEN 1
+    WHEN j.typ_jst = 'powiat' THEN 2
+    ELSE 3
+  END,
+  j.nazwa_jst COLLATE "pl-PL-x-icu" ASC;

@@ -1,0 +1,10 @@
+SELECT
+  CASE
+    WHEN EXISTS (
+      SELECT 1
+      FROM GPR g
+      WHERE g.kod_gminy::text = {{ this.params.gmina_kod }}
+    )
+    THEN 'Tak'
+    ELSE 'Nie'
+  END AS czy_gpr;

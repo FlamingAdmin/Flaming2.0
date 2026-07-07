@@ -1,0 +1,4 @@
+SELECT DISTINCT imie
+FROM pracownicy
+WHERE imie <> 'Pracownik'
+ORDER BY imie;

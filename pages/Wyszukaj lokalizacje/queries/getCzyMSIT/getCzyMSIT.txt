@@ -1,0 +1,10 @@
+SELECT
+  CASE
+    WHEN EXISTS (
+      SELECT 1
+      FROM msit_partnerzy g
+      WHERE g.gus_kod::text = {{ this.params.gmina_kod }}
+    )
+    THEN 'Tak'
+    ELSE 'Nie'
+  END AS czy_msit;

@@ -1,0 +1,23 @@
+SELECT
+  NULL::text AS sym,
+  NULL::text AS miejscowosc,
+  NULL::text AS rodzaj_miejscowosci,
+
+  NULL::text AS gmina_kod,
+  NULL::text AS gmina,
+  NULL::text AS rodzaj_gminy,
+
+  p.gus_kod AS powiat_kod,
+  p.nazwa_jst AS powiat
+
+FROM jst p
+
+WHERE
+  '{{ InputLokalizacja.text }}' <> ''
+  AND p.typ_jst = 'powiat'
+  AND p.nazwa_jst ILIKE '%' || '{{ InputLokalizacja.text }}' || '%'
+
+ORDER BY
+  p.nazwa_jst
+
+LIMIT 100;

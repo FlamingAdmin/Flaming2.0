@@ -1,0 +1,71 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "autoFocus": false,
+  "borderRadius": "0.375rem",
+  "bottomRow": 9,
+  "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+  "defaultText": "",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "onSubmit"
+    },
+    {
+      "key": "onTextChanged"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onTextChanged"
+    },
+    {
+      "key": "onSubmit"
+    }
+  ],
+  "iconAlign": "left",
+  "inputType": "TEXT",
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "g38js3s23x",
+  "label": "Wpisz nazwę szukanej lokalizacji:",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "BOLD",
+  "labelTextColor": "#64748b",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 2,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 42,
+  "mobileLeftColumn": 12,
+  "mobileRightColumn": 32,
+  "mobileTopRow": 35,
+  "needsErrorInfo": false,
+  "onSubmit": "{{\n  storeValue(\"lokalizacjeData\", [])\n    .then(() =>\n      Number(RadioRodzaj.selectedOptionValue) === 0\n        ? getSzukajMiejscowosc.run()\n        : Number(RadioRodzaj.selectedOptionValue) === 1\n          ? getSzukajGmina.run()\n          : Number(RadioRodzaj.selectedOptionValue) === 2\n            ? getSzukajPowiat.run()\n            : []\n    )\n    .then((data) => {\n      storeValue(\"lokalizacjeData\", data || []);\n    })\n}}",
+  "onTextChanged": "{{\n  storeValue(\"lokalizacjeData\", [])\n    .then(() =>\n      Number(RadioRodzaj.selectedOptionValue) === 0\n        ? Promise.all([\n            getSzukajMiejscowosc.run(),\n            getCzyKSRRmiasto.run()\n          ]).then(([data]) => data)\n        : Number(RadioRodzaj.selectedOptionValue) === 1\n          ? getSzukajGmina.run()\n          : Number(RadioRodzaj.selectedOptionValue) === 2\n            ? getSzukajPowiat.run()\n            : []\n    )\n    .then((data) => {\n      storeValue(\"lokalizacjeData\", data || []);\n    })\n}}",
+  "originalBottomRow": 14,
+  "originalTopRow": 7,
+  "parentColumnSpace": 26.484375,
+  "parentId": "bwosfg1pjs",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "resetOnSubmit": true,
+  "responsiveBehavior": "fill",
+  "rightColumn": 63,
+  "showStepArrows": false,
+  "topRow": 2,
+  "type": "INPUT_WIDGET_V2",
+  "version": 2,
+  "widgetId": "162iigyd0y",
+  "widgetName": "InputLokalizacja"
+}

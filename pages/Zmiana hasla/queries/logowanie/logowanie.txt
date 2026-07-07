@@ -1,0 +1,4 @@
+SELECT *
+FROM users
+WHERE mail = '{{ InputLogin.text }}'
+  AND password = crypt('{{ InputOldPass.text }}', password);

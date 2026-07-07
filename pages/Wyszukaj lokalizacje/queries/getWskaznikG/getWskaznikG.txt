@@ -1,0 +1,11 @@
+SELECT
+  COALESCE(
+    (
+      SELECT wg.wskaznik::text
+      FROM wskaznik_g wg
+      WHERE wg.kod_gus::text = {{ this.params.gmina_kod }}
+        AND wg.rok = 2025
+      LIMIT 1
+    ),
+    'Brak danych'
+  ) AS wskaznik_G;

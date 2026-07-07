@@ -1,0 +1,16 @@
+SELECT
+  k.id,
+  k.gus_kod AS kod,
+  j.nazwa_jst AS nazwa,
+  CASE
+    WHEN j.typ_jst = 'gmina' THEN gr.rodzaj_gmi_nazwa
+    WHEN j.typ_jst = 'powiat' THEN 'Powiat'
+    ELSE j.typ_jst
+  END AS typ,
+  NULL::numeric AS mieszkancy
+FROM ksrr_gminy k
+JOIN jst j
+  ON j.gus_kod = k.gus_kod
+LEFT JOIN gminy_rodzaje gr
+  ON gr.rodzaj_gmi_kod = j.rodzaj_gmi_kod
+ORDER BY j.nazwa_jst COLLATE "pl-PL-x-icu";

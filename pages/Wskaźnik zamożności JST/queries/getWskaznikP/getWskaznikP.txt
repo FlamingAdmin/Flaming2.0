@@ -1,0 +1,13 @@
+SELECT
+  j.gus_kod,
+  j.nazwa_jst AS nazwa_pow,
+  w.rok,
+  w.wskaznik
+FROM jst j
+INNER JOIN wskaznik_p w
+  ON w.gus_kod = j.gus_kod
+WHERE
+  '{{ SelectGmina.selectedOptionValue || "" }}' <> ''
+  AND j.typ_jst = 'powiat'
+  AND j.gus_kod = '{{ SelectGmina.selectedOptionValue }}'
+  AND w.rok = {{ Number(SelectRok.selectedOptionValue || 2025) }};

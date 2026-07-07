@@ -1,0 +1,6 @@
+SELECT 
+  gus_kod,
+  nazwa_jst
+FROM jst
+WHERE typ_jst = 'powiat'
+ORDER BY nazwa_jst COLLATE "pl-PL-x-icu";

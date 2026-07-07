@@ -1,0 +1,11 @@
+SELECT
+  rodzaj_poradni AS label,
+  rodzaj_poradni AS value
+FROM (
+  SELECT DISTINCT
+    trim(rodzaj_poradni) AS rodzaj_poradni
+  FROM public.aos_porady
+  WHERE rodzaj_poradni IS NOT NULL
+    AND trim(rodzaj_poradni) <> ''
+) s
+ORDER BY rodzaj_poradni COLLATE "pl-PL-x-icu" ASC;

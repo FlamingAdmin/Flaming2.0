@@ -1,0 +1,6 @@
+SELECT
+  COALESCE(MAX(liczba_porad_1tys), 0) AS liczba_porad_1tys
+FROM public.aos_porady
+WHERE rok = {{ Number(SelectRok.selectedOptionValue) }}
+  AND trim(gus_kod::text) = trim({{ String(SelectPowiat.selectedOptionValue || '') }})
+  AND trim(rodzaj_poradni) = trim({{ String(SelectPoradnia.selectedOptionValue || '') }});

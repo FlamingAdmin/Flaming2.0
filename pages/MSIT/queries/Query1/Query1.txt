@@ -1,0 +1,20 @@
+WITH wybrane_msit AS (
+    SELECT DISTINCT mp.msit_id
+    FROM msit_partnerzy mp
+    WHERE mp.gus_kod = {{ SelectJST.selectedOptionValue }}
+)
+
+SELECT
+    ms.id_msit,
+    ms.nazwa_msit,
+    ms.strategia_msit,
+    j.nazwa_jst AS partner
+FROM wybrane_msit w
+JOIN msit_spis ms
+    ON ms.id_msit = w.msit_id
+JOIN msit_partnerzy mp
+    ON mp.msit_id = ms.id_msit
+JOIN jst j
+    ON j.gus_kod = mp.gus_kod
+ORDER BY
+    j.nazwa_jst;

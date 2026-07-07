@@ -1,0 +1,80 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "autoFocus": false,
+  "borderRadius": "0.375rem",
+  "bottomRow": 7,
+  "boxShadow": "none",
+  "defaultText": "{{\n  appsmith.store.trybNaboru === \"edycja\"\n    ? ((getNabory.data || []).find(row => row.id === appsmith.store.wybranyNaborId)?.nr_naboru || \"\")\n    : \"\"\n}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "defaultText"
+    },
+    {
+      "key": "validation"
+    },
+    {
+      "key": "labelTextColor"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "labelTextColor"
+    },
+    {
+      "key": "onTextChanged"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onTextChanged"
+    }
+  ],
+  "errorMessage": "Numer naboru musi mieć format: FEMA.01.01-IP.01-001/25",
+  "iconAlign": "left",
+  "inputType": "TEXT",
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": true,
+  "key": "voc1b9c6pr",
+  "label": "Nr naboru",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "BOLD",
+  "labelTextColor": "{{\n  /^FEMA\\.\\d{2}\\.\\d{2}-IP\\.01-\\d{3}\\/\\d{2}$/.test(InputNrNaboru.text || \"\")\n    ? \"#4a5768\"\n    : \"#DC2626\"\n}}",
+  "labelTextSize": "",
+  "labelWidth": 5,
+  "leftColumn": 0,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 13,
+  "mobileLeftColumn": 1,
+  "mobileRightColumn": 21,
+  "mobileTopRow": 6,
+  "needsErrorInfo": false,
+  "onTextChanged": "{{ storeValue(\"naborZmieniony\", true) }}",
+  "originalBottomRow": 11,
+  "originalTopRow": 5,
+  "parentColumnSpace": 6.9375,
+  "parentId": "mp3rd0wiw8",
+  "parentRowSpace": 10,
+  "placeholderText": "Wpisz numer naboru",
+  "regex": "",
+  "renderMode": "CANVAS",
+  "resetOnSubmit": true,
+  "responsiveBehavior": "fill",
+  "rightColumn": 16,
+  "showStepArrows": false,
+  "topRow": 0,
+  "type": "INPUT_WIDGET_V2",
+  "validation": "{{\n  /^FEMA\\.\\d{2}\\.\\d{2}-IP\\.01-\\d{3}\\/\\d{2}$/.test(InputNrNaboru.text || \"\")\n}}",
+  "version": 2,
+  "widgetId": "yb0jzpldxp",
+  "widgetName": "InputNrNaboru"
+}

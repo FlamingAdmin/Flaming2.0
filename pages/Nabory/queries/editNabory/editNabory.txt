@@ -1,0 +1,127 @@
+UPDATE nabory
+SET
+  nr_naboru = COALESCE(NULLIF('{{ InputNrNaboru.value || "" }}', ''), nr_naboru),
+
+  typ_naboru = COALESCE(NULLIF('{{ SelectTypNaboru.value || "" }}', ''), typ_naboru),
+
+  opiekun1 = COALESCE(NULLIF('{{ SelectOpiekun1.value || "" }}', ''), opiekun1),
+
+  opiekun2 = COALESCE(NULLIF('{{ SelectOpiekun2.value || "" }}', ''), opiekun2),
+
+  data_naboru = COALESCE(
+    NULLIF('{{ PickerDateNabor.selectedDate ? moment(PickerDateNabor.selectedDate).format("YYYY-MM-DD") : "" }}', '')::date,
+    data_naboru
+  ),
+
+  ile_zlozonych = COALESCE(
+    {{
+      InputIleZlozonych.value === undefined ||
+      InputIleZlozonych.value === null ||
+      InputIleZlozonych.value === ""
+        ? "NULL"
+        : Number(InputIleZlozonych.value)
+    }},
+    ile_zlozonych
+  ),
+
+  data_przekazania = COALESCE(
+    NULLIF('{{ DatePickerPrzekazanie.selectedDate ? moment(DatePickerPrzekazanie.selectedDate).format("YYYY-MM-DD") : "" }}', '')::date,
+    data_przekazania
+  ),
+
+  ile_przekazanych = COALESCE(
+    {{
+      InputIlePrzekazanych.value === undefined ||
+      InputIlePrzekazanych.value === null ||
+      InputIlePrzekazanych.value === ""
+        ? "NULL"
+        : Number(InputIlePrzekazanych.value)
+    }},
+    ile_przekazanych
+  ),
+
+  data_oceny = COALESCE(
+    NULLIF('{{ DatePickerOcena.selectedDate ? moment(DatePickerOcena.selectedDate).format("YYYY-MM-DD") : "" }}', '')::date,
+    data_oceny
+  ),
+
+  data_protokolu = COALESCE(
+    NULLIF('{{ DatePickerProtokol.selectedDate ? moment(DatePickerProtokol.selectedDate).format("YYYY-MM-DD") : "" }}', '')::date,
+    data_protokolu
+  ),
+
+  nr_uchwaly = COALESCE(NULLIF('{{ InputNrUchwaly.value || "" }}', ''), nr_uchwaly),
+
+  data_uchwaly = COALESCE(
+    NULLIF('{{ DatePickerUchwala.selectedDate ? moment(DatePickerUchwala.selectedDate).format("YYYY-MM-DD") : "" }}', '')::date,
+    data_uchwaly
+  ),
+
+  rezerwa = COALESCE(NULLIF('{{ SelectRezerwa.value || "" }}', ''), rezerwa),
+
+  uwagi = '{{ InputUwagi.value !== undefined && InputUwagi.value !== null ? InputUwagi.value : "" }}',
+
+  typ_projektu = COALESCE(NULLIF('{{ InputTypProjektu.value || "" }}', ''), typ_projektu),
+
+  status = COALESCE(NULLIF('{{ SelectStatus.value || "" }}', ''), status),
+
+  budzet_panstwa = COALESCE(NULLIF('{{ SelectBudzet.value || "" }}', ''), budzet_panstwa),
+
+  stawka_panel = COALESCE(
+    {{
+      CurrencyPanel.value === undefined ||
+      CurrencyPanel.value === null ||
+      CurrencyPanel.value === ""
+        ? "NULL"
+        : Number(CurrencyPanel.value)
+    }},
+    stawka_panel
+  ),
+
+  stawka_fin = COALESCE(
+    {{
+      CurrencyFinans.value === undefined ||
+      CurrencyFinans.value === null ||
+      CurrencyFinans.value === ""
+        ? "NULL"
+        : Number(CurrencyFinans.value)
+    }},
+    stawka_fin
+  ),
+
+  stawka_omw = COALESCE(
+    {{
+      CurrencyOMW.value === undefined ||
+      CurrencyOMW.value === null ||
+      CurrencyOMW.value === ""
+        ? "NULL"
+        : Number(CurrencyOMW.value)
+    }},
+    stawka_omw
+  ),
+
+  stawka_om = COALESCE(
+    {{
+      CurrencyOM.value === undefined ||
+      CurrencyOM.value === null ||
+      CurrencyOM.value === ""
+        ? "NULL"
+        : Number(CurrencyOM.value)
+    }},
+    stawka_om
+  )
+
+WHERE id = {{
+  TableNabory.selectedRow && TableNabory.selectedRow.id
+    ? TableNabory.selectedRow.id
+    : 0
+}}
+
+RETURNING
+  id,
+  nr_naboru,
+  data_naboru,
+  data_przekazania,
+  data_oceny,
+  data_protokolu,
+  data_uchwaly;

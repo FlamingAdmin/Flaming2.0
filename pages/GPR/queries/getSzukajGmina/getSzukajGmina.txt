@@ -1,0 +1,12 @@
+SELECT
+  j.gus_kod AS value,
+  j.nazwa_jst AS label
+FROM jst j
+WHERE
+  j.typ_jst = 'gmina'
+  AND (
+    COALESCE('{{ SelectPowiat.selectedOptionValue }}', '') = ''
+    OR LEFT(j.gus_kod::text, 4) = '{{ SelectPowiat.selectedOptionValue }}'
+  )
+ORDER BY
+  j.nazwa_jst;

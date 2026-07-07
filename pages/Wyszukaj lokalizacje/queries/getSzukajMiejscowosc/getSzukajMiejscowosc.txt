@@ -1,0 +1,36 @@
+SELECT
+  m.sym,
+  m.nazwa_miejsc AS miejscowosc,
+  srm.rodzaj_miejsc_nazwa AS rodzaj_miejscowosci,
+
+  j.gus_kod AS gmina_kod,
+  j.nazwa_jst AS gmina,
+  gr.rodzaj_gmi_nazwa AS rodzaj_gminy,
+
+  p.gus_kod AS powiat_kod,
+  p.nazwa_jst AS powiat
+
+FROM miejscowosci m
+
+LEFT JOIN simc_rodzaje_miejsc srm
+  ON srm.rodzaj_miejsc_kod::text = m.rodzaj_miejsc_kod::text
+
+LEFT JOIN jst j
+  ON j.gus_kod::text = m.jst_gus_kod::text
+
+LEFT JOIN gminy_rodzaje gr
+  ON gr.rodzaj_gmi_kod::text = j.rodzaj_gmi_kod::text
+
+LEFT JOIN jst p
+  ON p.gus_kod::text = LPAD(m.pow_kod::text, 4, '0')
+ AND p.typ_jst = 'powiat'
+
+WHERE
+  '{{ InputLokalizacja.text }}' <> ''
+  AND m.nazwa_miejsc ILIKE '%' || '{{ InputLokalizacja.text }}' || '%'
+
+ORDER BY
+  m.nazwa_miejsc,
+  j.nazwa_jst
+
+LIMIT 300;

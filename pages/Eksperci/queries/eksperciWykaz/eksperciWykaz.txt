@@ -1,0 +1,11 @@
+SELECT
+  eksperci.id AS ekspert_id,
+  NULL::integer AS dziedzina_id,
+  NULL::integer AS kategoria_id,
+  NULL::integer AS obszar_id,
+  eksperci.nazwisko,
+  eksperci.email,
+  eksperci.telefon1,
+  eksperci.umowa
+FROM eksperci
+ORDER BY eksperci.nazwisko COLLATE "pl-x-icu" ASC;

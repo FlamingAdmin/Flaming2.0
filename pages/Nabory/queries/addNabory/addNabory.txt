@@ -1,0 +1,96 @@
+INSERT INTO nabory (
+  nr_naboru,
+  typ_naboru,
+  opiekun1,
+  opiekun2,
+  data_naboru,
+  ile_zlozonych,
+  data_przekazania,
+  ile_przekazanych,
+  data_oceny,
+  data_protokolu,
+  nr_uchwaly,
+  data_uchwaly,
+  rezerwa,
+  uwagi,
+  typ_projektu,
+  status,
+  budzet_panstwa,
+  stawka_panel,
+  stawka_fin,
+  stawka_omw,
+  stawka_om
+)
+VALUES (
+  NULLIF('{{InputNrNaboru.value || ""}}', ''),
+  NULLIF('{{SelectTypNaboru.value || ""}}', ''),
+  NULLIF('{{SelectOpiekun1.value || ""}}', ''),
+  NULLIF('{{SelectOpiekun2.value || ""}}', ''),
+
+  NULLIF('{{PickerDateNabor.value || ""}}', '')::date,
+
+  {{
+    InputIleZlozonych.value === undefined ||
+    InputIleZlozonych.value === null ||
+    InputIleZlozonych.value === ""
+      ? "NULL"
+      : Number(InputIleZlozonych.value)
+  }},
+
+  NULLIF('{{DatePickerPrzekazanie.value || ""}}', '')::date,
+
+  {{
+    InputIlePrzekazanych.value === undefined ||
+    InputIlePrzekazanych.value === null ||
+    InputIlePrzekazanych.value === ""
+      ? "NULL"
+      : Number(InputIlePrzekazanych.value)
+  }},
+
+  NULLIF('{{DatePickerOcena.value || ""}}', '')::date,
+  NULLIF('{{DatePickerProtokol.value || ""}}', '')::date,
+
+  NULLIF('{{InputNrUchwaly.value || ""}}', ''),
+
+  NULLIF('{{DatePickerUchwala.value || ""}}', '')::date,
+
+  NULLIF('{{SelectRezerwa.value || ""}}', ''),
+
+  '{{(InputUwagi.value !== undefined && InputUwagi.value !== null ? InputUwagi.value : "").replaceAll("'", "''")}}',
+
+  NULLIF('{{InputTypProjektu.value || ""}}', ''),
+  NULLIF('{{SelectStatus.value || ""}}', ''),
+  NULLIF('{{SelectBudzet.value || ""}}', ''),
+
+  {{
+    CurrencyPanel.value === undefined ||
+    CurrencyPanel.value === null ||
+    CurrencyPanel.value === ""
+      ? "NULL"
+      : Number(CurrencyPanel.value)
+  }},
+
+  {{
+    CurrencyFinans.value === undefined ||
+    CurrencyFinans.value === null ||
+    CurrencyFinans.value === ""
+      ? "NULL"
+      : Number(CurrencyFinans.value)
+  }},
+
+  {{
+    CurrencyOMW.value === undefined ||
+    CurrencyOMW.value === null ||
+    CurrencyOMW.value === ""
+      ? "NULL"
+      : Number(CurrencyOMW.value)
+  }},
+
+{{
+  CurrencyPanel.value === undefined ||
+  CurrencyPanel.value === null ||
+  CurrencyPanel.value === ""
+    ? 0
+    : Number(CurrencyPanel.value)
+}}
+);

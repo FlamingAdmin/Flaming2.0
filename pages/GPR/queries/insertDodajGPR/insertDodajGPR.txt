@@ -1,0 +1,17 @@
+INSERT INTO gpr (
+    kod_gminy,
+    kod_powiatu,
+    tytul,
+    data_zatwierdzenia,
+    data_wykazu,
+    link
+)
+VALUES (
+    NULLIF('{{ SelectGmina.selectedOptionValue }}', ''),
+    NULLIF('{{ SelectPowiat.selectedOptionValue }}', ''),
+    NULLIF('{{ InputTytul.text }}', ''),
+    '{{ moment(DataZatwierdzenia.selectedDate).format("YYYY-MM-DD") }}'::date,
+    '{{ moment(DataWpisu.selectedDate).format("YYYY-MM-DD") }}'::date,
+    NULLIF('{{ InputLink.text }}', '')
+)
+RETURNING *;

@@ -1,0 +1,64 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "0.375rem",
+  "bottomRow": 8,
+  "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+  "defaultOptionValue": "2025",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "isDisabled": false,
+  "isFilterable": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "060quyas4c",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Rok",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 45,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 12,
+  "mobileLeftColumn": 1,
+  "mobileRightColumn": 21,
+  "mobileTopRow": 5,
+  "needsErrorInfo": false,
+  "onOptionChange": "{{\n  Number(SliderJST.value) === 0\n    ? (\n        getBazowaG.run(),\n        getWskaznikG.run()\n      )\n    : (\n        getBazowaP.run(),\n        getWskaznikP.run()\n      )\n}}",
+  "optionLabel": "label",
+  "optionValue": "value",
+  "parentColumnSpace": 20.21875,
+  "parentId": "qrhw6zlx4b",
+  "parentRowSpace": 10,
+  "placeholderText": "Wybierz rok",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "serverSideFiltering": false,
+  "sourceData": "[\n  {\n    \"label\": \"2024\",\n    \"value\": \"2024\"\n  },\n  {\n    \"label\": \"2025\",\n    \"value\": \"2025\"\n  }\n]",
+  "topRow": 1,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "wcwfoes80x",
+  "widgetName": "SelectRok"
+}

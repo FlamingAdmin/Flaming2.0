@@ -1,0 +1,26 @@
+SELECT DISTINCT
+  kategorie.id AS "NR KAT.",
+  kategorie.nazwa_kategorie AS "NAZWA KATEGORII",
+  dziedziny.id AS dziedzina_id,
+  dziedziny.nazwa AS dziedzina_nazwa,
+  MIN(priorytety.numer) AS priorytet
+FROM dziedziny
+INNER JOIN kategorie_dziedziny 
+  ON dziedziny.id = kategorie_dziedziny.dziedziny_id
+INNER JOIN kategorie 
+  ON kategorie.id = kategorie_dziedziny.kategorie_id
+INNER JOIN dziedziny_priorytety 
+  ON dziedziny.id = dziedziny_priorytety.dziedziny_id
+INNER JOIN priorytety 
+  ON dziedziny_priorytety.priorytety_id = priorytety.id
+WHERE 
+  dziedziny.id = {{ Number(SelectWyszukaj.selectedOptionValue || 0) }}
+  AND kategorie.id <> 194
+GROUP BY
+  kategorie.id,
+  kategorie.nazwa_kategorie,
+  dziedziny.id,
+  dziedziny.nazwa
+ORDER BY 
+  priorytet ASC,
+  "NR KAT." ASC;

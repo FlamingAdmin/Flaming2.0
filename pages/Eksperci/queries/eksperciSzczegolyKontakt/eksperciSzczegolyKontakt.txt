@@ -1,0 +1,13 @@
+SELECT 
+  id AS ekspert_id,
+  email,
+  email2,
+  telefon1,
+  telefon2,
+  umowa,
+  nr_umowy,
+  data_umowy,
+  uwagi
+FROM eksperci
+WHERE
+  eksperci.id = {{ eksperciTable.selectedRow.ekspert_id || 0 }};

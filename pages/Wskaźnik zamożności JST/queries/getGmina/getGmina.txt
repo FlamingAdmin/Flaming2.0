@@ -1,0 +1,10 @@
+SELECT 
+  j.gus_kod,
+  j.nazwa_jst,
+  j.rodzaj_gmi_kod,
+  gr.rodzaj_gmi_nazwa
+FROM jst j
+LEFT JOIN gminy_rodzaje gr
+  ON gr.rodzaj_gmi_kod = j.rodzaj_gmi_kod
+WHERE j.typ_jst = 'gmina'
+ORDER BY j.nazwa_jst ASC;

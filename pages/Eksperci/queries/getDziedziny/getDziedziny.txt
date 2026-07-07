@@ -1,0 +1,1 @@
+SELECT id, nazwa FROM public.dziedziny ORDER BY nazwa COLLATE "pl-x-icu" ASC;

@@ -1,0 +1,6 @@
+SELECT
+  COALESCE(wg.wskaznik::text, 'Brak danych') AS wskaznik_p
+FROM wskaznik_p wg
+WHERE wg.gus_kod::text = {{ this.params.powiat_kod }}
+  AND wg.rok = 2025
+LIMIT 1;

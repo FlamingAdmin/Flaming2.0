@@ -1,0 +1,8 @@
+SELECT
+  j.gus_kod AS value,
+  j.nazwa_jst AS label
+FROM jst j
+WHERE
+  j.typ_jst = 'powiat'
+ORDER BY
+  j.nazwa_jst;

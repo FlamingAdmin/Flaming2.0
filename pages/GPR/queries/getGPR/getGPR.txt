@@ -1,0 +1,17 @@
+SELECT
+    g.id,
+    gm.nazwa_jst AS gmina,
+    pw.nazwa_jst AS powiat,
+    g.tytul,
+    g.data_zatwierdzenia,
+    g.data_wykazu,
+    g.link
+FROM gpr g
+LEFT JOIN jst gm
+    ON gm.gus_kod = g.kod_gminy
+LEFT JOIN jst pw
+    ON pw.gus_kod = g.kod_powiatu
+ORDER BY
+    gm.nazwa_jst,
+    pw.nazwa_jst,
+    g.tytul;

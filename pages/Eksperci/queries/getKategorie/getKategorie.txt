@@ -1,0 +1,2 @@
+SELECT kategorie.id, nazwa_kategorie FROM kategorie
+order by kategorie.id;

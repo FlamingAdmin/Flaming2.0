@@ -1,0 +1,1885 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": "{{\n  getHarmonogram.isLoading\n}}",
+  "borderColor": "",
+  "borderRadius": "0.375rem",
+  "borderWidth": "1",
+  "bottomRow": 78,
+  "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+  "cachedTableData": {},
+  "canFreezeColumn": false,
+  "childStylesheet": {
+    "button": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    },
+    "editActions": {
+      "discardBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "discardButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "saveBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "saveButtonColor": "{{appsmith.theme.colors.primaryColor}}"
+    },
+    "iconButton": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    },
+    "menuButton": {
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "boxShadow": "none",
+      "menuColor": "{{appsmith.theme.colors.primaryColor}}"
+    }
+  },
+  "columnOrder": [
+    "PRACOWNIK",
+    "_01",
+    "_02",
+    "_03",
+    "_04",
+    "_05",
+    "_06",
+    "_07",
+    "_08",
+    "_09",
+    "_10",
+    "_11",
+    "_12",
+    "_13",
+    "_14",
+    "_15",
+    "_16",
+    "_17",
+    "_18",
+    "_19",
+    "_20",
+    "_21",
+    "_22",
+    "_23",
+    "_24",
+    "_25",
+    "_26",
+    "_27",
+    "_28",
+    "_29",
+    "_30",
+    "_31",
+    "UWAGI",
+    "sort_order",
+    "ID"
+  ],
+  "columnUpdatedAt": 1782042274740,
+  "columnWidthMap": {
+    "_01": 60,
+    "_02": 60,
+    "_03": 60,
+    "_04": 60,
+    "_05": 60,
+    "_06": 60,
+    "_07": 60,
+    "_08": 60,
+    "_09": 60,
+    "_10": 60,
+    "_11": 60,
+    "_12": 60,
+    "_13": 60,
+    "_14": 60,
+    "_15": 60,
+    "_16": 60,
+    "_17": 60,
+    "_18": 60,
+    "_19": 60,
+    "_20": 60,
+    "_21": 60,
+    "_22": 60,
+    "_23": 60,
+    "_24": 60,
+    "_25": 60,
+    "_26": 60,
+    "_27": 60,
+    "_28": 60,
+    "_29": 60,
+    "_30": 60,
+    "_31": 60
+  },
+  "compactMode": "DEFAULT",
+  "customIsLoading": false,
+  "customIsLoadingValue": "",
+  "defaultPageSize": 0,
+  "defaultSelectedRowIndex": "",
+  "defaultSelectedRowIndices": [
+    0
+  ],
+  "delimiter": ",",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "tableData"
+    },
+    {
+      "key": "primaryColumns._10.computedValue"
+    },
+    {
+      "key": "primaryColumns._11.computedValue"
+    },
+    {
+      "key": "primaryColumns._12.computedValue"
+    },
+    {
+      "key": "primaryColumns._13.computedValue"
+    },
+    {
+      "key": "primaryColumns._14.computedValue"
+    },
+    {
+      "key": "primaryColumns._15.computedValue"
+    },
+    {
+      "key": "primaryColumns._16.computedValue"
+    },
+    {
+      "key": "primaryColumns._17.computedValue"
+    },
+    {
+      "key": "primaryColumns._18.computedValue"
+    },
+    {
+      "key": "primaryColumns._19.computedValue"
+    },
+    {
+      "key": "primaryColumns._20.computedValue"
+    },
+    {
+      "key": "primaryColumns._21.computedValue"
+    },
+    {
+      "key": "primaryColumns._22.computedValue"
+    },
+    {
+      "key": "primaryColumns._23.computedValue"
+    },
+    {
+      "key": "primaryColumns._24.computedValue"
+    },
+    {
+      "key": "primaryColumns._25.computedValue"
+    },
+    {
+      "key": "primaryColumns._26.computedValue"
+    },
+    {
+      "key": "primaryColumns._27.computedValue"
+    },
+    {
+      "key": "primaryColumns._28.computedValue"
+    },
+    {
+      "key": "primaryColumns._29.computedValue"
+    },
+    {
+      "key": "primaryColumns._30.computedValue"
+    },
+    {
+      "key": "primaryColumns._31.computedValue"
+    },
+    {
+      "key": "primaryColumns.sort_order.computedValue"
+    },
+    {
+      "key": "primaryColumns.PRACOWNIK.computedValue"
+    },
+    {
+      "key": "primaryColumns._01.computedValue"
+    },
+    {
+      "key": "primaryColumns._02.computedValue"
+    },
+    {
+      "key": "primaryColumns._03.computedValue"
+    },
+    {
+      "key": "primaryColumns._04.computedValue"
+    },
+    {
+      "key": "primaryColumns._05.computedValue"
+    },
+    {
+      "key": "primaryColumns._06.computedValue"
+    },
+    {
+      "key": "primaryColumns._07.computedValue"
+    },
+    {
+      "key": "primaryColumns._08.computedValue"
+    },
+    {
+      "key": "primaryColumns._09.computedValue"
+    },
+    {
+      "key": "primaryColumns.UWAGI.computedValue"
+    },
+    {
+      "key": "headerTextColor"
+    },
+    {
+      "key": "primaryColumns._03.cellBackground"
+    },
+    {
+      "key": "primaryColumns._04.cellBackground"
+    },
+    {
+      "key": "primaryColumns._05.cellBackground"
+    },
+    {
+      "key": "primaryColumns._06.cellBackground"
+    },
+    {
+      "key": "primaryColumns._07.cellBackground"
+    },
+    {
+      "key": "primaryColumns._08.cellBackground"
+    },
+    {
+      "key": "primaryColumns._09.cellBackground"
+    },
+    {
+      "key": "primaryColumns._10.cellBackground"
+    },
+    {
+      "key": "primaryColumns._11.cellBackground"
+    },
+    {
+      "key": "primaryColumns._12.cellBackground"
+    },
+    {
+      "key": "primaryColumns._13.cellBackground"
+    },
+    {
+      "key": "primaryColumns._14.cellBackground"
+    },
+    {
+      "key": "primaryColumns._15.cellBackground"
+    },
+    {
+      "key": "primaryColumns._16.cellBackground"
+    },
+    {
+      "key": "primaryColumns._17.cellBackground"
+    },
+    {
+      "key": "primaryColumns._18.cellBackground"
+    },
+    {
+      "key": "primaryColumns._19.cellBackground"
+    },
+    {
+      "key": "primaryColumns._20.cellBackground"
+    },
+    {
+      "key": "primaryColumns._21.cellBackground"
+    },
+    {
+      "key": "primaryColumns._22.cellBackground"
+    },
+    {
+      "key": "primaryColumns._23.cellBackground"
+    },
+    {
+      "key": "primaryColumns._24.cellBackground"
+    },
+    {
+      "key": "primaryColumns._25.cellBackground"
+    },
+    {
+      "key": "primaryColumns._26.cellBackground"
+    },
+    {
+      "key": "primaryColumns._27.cellBackground"
+    },
+    {
+      "key": "primaryColumns._28.cellBackground"
+    },
+    {
+      "key": "primaryColumns._29.cellBackground"
+    },
+    {
+      "key": "primaryColumns._30.cellBackground"
+    },
+    {
+      "key": "primaryColumns._31.cellBackground"
+    },
+    {
+      "key": "primaryColumns._01.cellBackground"
+    },
+    {
+      "key": "primaryColumns._01.textColor"
+    },
+    {
+      "key": "primaryColumns._02.cellBackground"
+    },
+    {
+      "key": "primaryColumns._02.textColor"
+    },
+    {
+      "key": "primaryColumns._03.textColor"
+    },
+    {
+      "key": "primaryColumns._04.textColor"
+    },
+    {
+      "key": "primaryColumns._05.textColor"
+    },
+    {
+      "key": "primaryColumns._06.textColor"
+    },
+    {
+      "key": "primaryColumns._07.textColor"
+    },
+    {
+      "key": "primaryColumns._08.textColor"
+    },
+    {
+      "key": "primaryColumns._09.textColor"
+    },
+    {
+      "key": "primaryColumns._10.textColor"
+    },
+    {
+      "key": "primaryColumns._11.textColor"
+    },
+    {
+      "key": "primaryColumns._12.textColor"
+    },
+    {
+      "key": "primaryColumns._13.textColor"
+    },
+    {
+      "key": "primaryColumns._14.textColor"
+    },
+    {
+      "key": "primaryColumns._15.textColor"
+    },
+    {
+      "key": "primaryColumns._16.textColor"
+    },
+    {
+      "key": "primaryColumns._17.textColor"
+    },
+    {
+      "key": "primaryColumns._18.textColor"
+    },
+    {
+      "key": "primaryColumns._19.textColor"
+    },
+    {
+      "key": "primaryColumns._20.textColor"
+    },
+    {
+      "key": "primaryColumns._21.textColor"
+    },
+    {
+      "key": "primaryColumns._22.textColor"
+    },
+    {
+      "key": "primaryColumns._23.textColor"
+    },
+    {
+      "key": "primaryColumns._24.textColor"
+    },
+    {
+      "key": "primaryColumns._25.textColor"
+    },
+    {
+      "key": "primaryColumns._26.textColor"
+    },
+    {
+      "key": "primaryColumns._27.textColor"
+    },
+    {
+      "key": "primaryColumns._28.textColor"
+    },
+    {
+      "key": "primaryColumns._29.textColor"
+    },
+    {
+      "key": "primaryColumns._30.textColor"
+    },
+    {
+      "key": "primaryColumns._31.textColor"
+    },
+    {
+      "key": "primaryColumns.UWAGI.cellBackground"
+    },
+    {
+      "key": "primaryColumns.UWAGI.textColor"
+    },
+    {
+      "key": "primaryColumns.PRACOWNIK.cellBackground"
+    },
+    {
+      "key": "primaryColumns.PRACOWNIK.textColor"
+    },
+    {
+      "key": "animateLoading"
+    },
+    {
+      "key": "primaryColumns.ID.computedValue"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "tableData"
+    },
+    {
+      "key": "primaryColumns._01.cellBackground"
+    },
+    {
+      "key": "primaryColumns._02.cellBackground"
+    },
+    {
+      "key": "primaryColumns._03.cellBackground"
+    },
+    {
+      "key": "primaryColumns._04.cellBackground"
+    },
+    {
+      "key": "primaryColumns._05.cellBackground"
+    },
+    {
+      "key": "primaryColumns._06.cellBackground"
+    },
+    {
+      "key": "primaryColumns._07.cellBackground"
+    },
+    {
+      "key": "primaryColumns._08.cellBackground"
+    },
+    {
+      "key": "primaryColumns._09.cellBackground"
+    },
+    {
+      "key": "primaryColumns._10.cellBackground"
+    },
+    {
+      "key": "primaryColumns._11.cellBackground"
+    },
+    {
+      "key": "primaryColumns._12.cellBackground"
+    },
+    {
+      "key": "primaryColumns._13.cellBackground"
+    },
+    {
+      "key": "primaryColumns._14.cellBackground"
+    },
+    {
+      "key": "primaryColumns._15.cellBackground"
+    },
+    {
+      "key": "primaryColumns._16.cellBackground"
+    },
+    {
+      "key": "primaryColumns._17.cellBackground"
+    },
+    {
+      "key": "primaryColumns._18.cellBackground"
+    },
+    {
+      "key": "primaryColumns._19.cellBackground"
+    },
+    {
+      "key": "primaryColumns._20.cellBackground"
+    },
+    {
+      "key": "primaryColumns._21.cellBackground"
+    },
+    {
+      "key": "primaryColumns._22.cellBackground"
+    },
+    {
+      "key": "primaryColumns._23.cellBackground"
+    },
+    {
+      "key": "primaryColumns._24.cellBackground"
+    },
+    {
+      "key": "primaryColumns._25.cellBackground"
+    },
+    {
+      "key": "primaryColumns._26.cellBackground"
+    },
+    {
+      "key": "primaryColumns._27.cellBackground"
+    },
+    {
+      "key": "primaryColumns._28.cellBackground"
+    },
+    {
+      "key": "primaryColumns._29.cellBackground"
+    },
+    {
+      "key": "primaryColumns._30.cellBackground"
+    },
+    {
+      "key": "primaryColumns._31.cellBackground"
+    },
+    {
+      "key": "primaryColumns._01.textColor"
+    },
+    {
+      "key": "primaryColumns._02.textColor"
+    },
+    {
+      "key": "primaryColumns._03.textColor"
+    },
+    {
+      "key": "primaryColumns._04.textColor"
+    },
+    {
+      "key": "primaryColumns._05.textColor"
+    },
+    {
+      "key": "primaryColumns._06.textColor"
+    },
+    {
+      "key": "primaryColumns._07.textColor"
+    },
+    {
+      "key": "primaryColumns._08.textColor"
+    },
+    {
+      "key": "primaryColumns._09.textColor"
+    },
+    {
+      "key": "primaryColumns._10.textColor"
+    },
+    {
+      "key": "primaryColumns._11.textColor"
+    },
+    {
+      "key": "primaryColumns._12.textColor"
+    },
+    {
+      "key": "primaryColumns._13.textColor"
+    },
+    {
+      "key": "primaryColumns._14.textColor"
+    },
+    {
+      "key": "primaryColumns._15.textColor"
+    },
+    {
+      "key": "primaryColumns._16.textColor"
+    },
+    {
+      "key": "primaryColumns._17.textColor"
+    },
+    {
+      "key": "primaryColumns._18.textColor"
+    },
+    {
+      "key": "primaryColumns._19.textColor"
+    },
+    {
+      "key": "primaryColumns._20.textColor"
+    },
+    {
+      "key": "primaryColumns._21.textColor"
+    },
+    {
+      "key": "primaryColumns._22.textColor"
+    },
+    {
+      "key": "primaryColumns._23.textColor"
+    },
+    {
+      "key": "primaryColumns._24.textColor"
+    },
+    {
+      "key": "primaryColumns._25.textColor"
+    },
+    {
+      "key": "primaryColumns._26.textColor"
+    },
+    {
+      "key": "primaryColumns._27.textColor"
+    },
+    {
+      "key": "primaryColumns._28.textColor"
+    },
+    {
+      "key": "primaryColumns._29.textColor"
+    },
+    {
+      "key": "primaryColumns._30.textColor"
+    },
+    {
+      "key": "primaryColumns._31.textColor"
+    },
+    {
+      "key": "primaryColumns.UWAGI.cellBackground"
+    },
+    {
+      "key": "primaryColumns.UWAGI.textColor"
+    },
+    {
+      "key": "primaryColumns.PRACOWNIK.cellBackground"
+    },
+    {
+      "key": "primaryColumns.PRACOWNIK.textColor"
+    },
+    {
+      "key": "animateLoading"
+    },
+    {
+      "key": "onRowSelected"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onRowSelected"
+    }
+  ],
+  "enableClientSideSearch": true,
+  "endOfData": false,
+  "flexVerticalAlignment": "start",
+  "fontStyle": "",
+  "headerRowColor": "#64748b",
+  "headerTextColor": "{{appsmith.theme.colors.backgroundColor}}",
+  "horizontalAlignment": "CENTER",
+  "inlineEditingSaveOption": "ROW_LEVEL",
+  "isLoading": false,
+  "isSortable": false,
+  "isVisible": true,
+  "isVisibleDownload": true,
+  "isVisibleFilters": false,
+  "isVisiblePagination": false,
+  "isVisibleSearch": false,
+  "key": "7gd6zipovk",
+  "label": "Data",
+  "leftColumn": 0,
+  "minWidth": 450,
+  "mobileBottomRow": 38,
+  "mobileLeftColumn": 11,
+  "mobileRightColumn": 45,
+  "mobileTopRow": 10,
+  "needsErrorInfo": false,
+  "onRowSelected": "{{\n  harmonogramModal.open()\n}}",
+  "originalBottomRow": 66,
+  "originalTopRow": 24,
+  "parentColumnSpace": 19.8125,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "primaryColumns": {
+    "ID": {
+      "alias": "ID",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "number",
+      "computedValue": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"ID\"])) : ID })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "CENTER",
+      "id": "ID",
+      "index": 23,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": false,
+      "label": "ID",
+      "notation": "standard",
+      "originalId": "ID",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "PRACOWNIK": {
+      "alias": "PRACOWNIK",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (\n  currentRow.PRACOWNIK === \"W BIURZE\"\n    ? \"#64748b\"\n    : \"#FFFFF\"\n)) : \n  currentRow.PRACOWNIK === \"W BIURZE\"\n    ? \"#64748b\"\n    : \"#FFFFF\"\n })()}}",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"PRACOWNIK\"])) : PRACOWNIK })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "CENTER",
+      "id": "PRACOWNIK",
+      "index": 23,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "PRACOWNIK",
+      "notation": "standard",
+      "originalId": "PRACOWNIK",
+      "sticky": "left",
+      "textColor": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (\n  currentRow.PRACOWNIK === \"W BIURZE\"\n    ? \"#f8fafc\"\n    : \"#000000\"\n)) : \n  currentRow.PRACOWNIK === \"W BIURZE\"\n    ? \"#f8fafc\"\n    : \"#000000\"\n })()}}",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "UWAGI": {
+      "alias": "UWAGI",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( harmonogramStyle.bg(currentRow[\"UWAGI\"]))) :  harmonogramStyle.bg(currentRow[\"UWAGI\"]) })()}}",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"UWAGI\"])) : UWAGI })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "CENTER",
+      "id": "UWAGI",
+      "index": 33,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "UWAGI",
+      "notation": "standard",
+      "originalId": "UWAGI",
+      "sticky": "",
+      "textColor": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( harmonogramStyle.color(currentRow[\"UWAGI\"]))) :  harmonogramStyle.color(currentRow[\"UWAGI\"]) })()}}",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "_01": {
+      "alias": "01",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( harmonogramStyle.bg(currentRow[\"01\"])\n)) :  harmonogramStyle.bg(currentRow[\"01\"])\n })()}}",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"01\"])) : 01 })()}}",
+      "currencyCode": "USD",
+      "customAlias": "",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "CENTER",
+      "id": "_01",
+      "index": 24,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "01",
+      "notation": "standard",
+      "originalId": "01",
+      "selectOptions": "",
+      "sticky": "",
+      "textColor": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( harmonogramStyle.color(currentRow[\"01\"])\n)) :  harmonogramStyle.color(currentRow[\"01\"])\n })()}}",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "_02": {
+      "alias": "02",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( harmonogramStyle.bg(currentRow[\"02\"]))) :  harmonogramStyle.bg(currentRow[\"02\"]) })()}}",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"02\"])) : 02 })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "CENTER",
+      "id": "_02",
+      "index": 25,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "02",
+      "notation": "standard",
+      "originalId": "02",
+      "sticky": "",
+      "textColor": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( harmonogramStyle.color(currentRow[\"02\"]))) :  harmonogramStyle.color(currentRow[\"02\"]) })()}}",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "_03": {
+      "alias": "03",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( harmonogramStyle.bg(currentRow[\"03\"]))) :  harmonogramStyle.bg(currentRow[\"03\"]) })()}}",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"03\"])) : 03 })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "CENTER",
+      "id": "_03",
+      "index": 26,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "03",
+      "notation": "standard",
+      "originalId": "03",
+      "sticky": "",
+      "textColor": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( harmonogramStyle.color(currentRow[\"03\"]))) :  harmonogramStyle.color(currentRow[\"03\"]) })()}}",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "_04": {
+      "alias": "04",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( harmonogramStyle.bg(currentRow[\"04\"]))) :  harmonogramStyle.bg(currentRow[\"04\"]) })()}}",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"04\"])) : 04 })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "CENTER",
+      "id": "_04",
+      "index": 27,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "04",
+      "notation": "standard",
+      "originalId": "04",
+      "sticky": "",
+      "textColor": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( harmonogramStyle.color(currentRow[\"04\"]))) :  harmonogramStyle.color(currentRow[\"04\"]) })()}}",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "_05": {
+      "alias": "05",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( harmonogramStyle.bg(currentRow[\"05\"]))) :  harmonogramStyle.bg(currentRow[\"05\"]) })()}}",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"05\"])) : 05 })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "CENTER",
+      "id": "_05",
+      "index": 28,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "05",
+      "notation": "standard",
+      "originalId": "05",
+      "sticky": "",
+      "textColor": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( harmonogramStyle.color(currentRow[\"05\"]))) :  harmonogramStyle.color(currentRow[\"05\"]) })()}}",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "_06": {
+      "alias": "06",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (\n  typeof currentRow !== \"undefined\"\n    ? harmonogramStyle.bg(currentRow[\"06\"] || \"\")\n    : \"\"\n)) : \n  typeof currentRow !== \"undefined\"\n    ? harmonogramStyle.bg(currentRow[\"06\"] || \"\")\n    : \"\"\n })()}}",
+      "columnType": "select",
+      "computedValue": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"06\"])) : 06 })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "CENTER",
+      "id": "_06",
+      "index": 29,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "06",
+      "notation": "standard",
+      "originalId": "06",
+      "selectOptions": "[\n  { \"label\": \"B\", \"value\": \"B\" },\n  { \"label\": \"PZ-H\", \"value\": \"PZ-H\" },\n  { \"label\": \"PZ-O\", \"value\": \"PZ-O\" },\n  { \"label\": \"UW\", \"value\": \"UW\" },\n  { \"label\": \"UŻ\", \"value\": \"UŻ\" },\n  { \"label\": \"CH\", \"value\": \"CH\" },\n  { \"label\": \"CHOP\", \"value\": \"CHOP\" },\n  { \"label\": \"OP\", \"value\": \"OP\" },\n  { \"label\": \"S\", \"value\": \"S\" },\n  { \"label\": \"UB\", \"value\": \"UB\" },\n  { \"label\": \"WS\", \"value\": \"WS\" }\n]",
+      "sticky": "",
+      "textColor": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( harmonogramStyle.color(currentRow[\"06\"]))) :  harmonogramStyle.color(currentRow[\"06\"]) })()}}",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "_07": {
+      "alias": "07",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( harmonogramStyle.bg(currentRow[\"07\"]))) :  harmonogramStyle.bg(currentRow[\"07\"]) })()}}",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"07\"])) : 07 })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "CENTER",
+      "id": "_07",
+      "index": 30,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "07",
+      "notation": "standard",
+      "originalId": "07",
+      "sticky": "",
+      "textColor": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( harmonogramStyle.color(currentRow[\"07\"]))) :  harmonogramStyle.color(currentRow[\"07\"]) })()}}",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "_08": {
+      "alias": "08",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( harmonogramStyle.bg(currentRow[\"08\"]))) :  harmonogramStyle.bg(currentRow[\"08\"]) })()}}",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"08\"])) : 08 })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "CENTER",
+      "id": "_08",
+      "index": 31,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "08",
+      "notation": "standard",
+      "originalId": "08",
+      "sticky": "",
+      "textColor": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( harmonogramStyle.color(currentRow[\"08\"]))) :  harmonogramStyle.color(currentRow[\"08\"]) })()}}",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "_09": {
+      "alias": "09",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( harmonogramStyle.bg(currentRow[\"09\"]))) :  harmonogramStyle.bg(currentRow[\"09\"]) })()}}",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"09\"])) : 09 })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "CENTER",
+      "id": "_09",
+      "index": 32,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "09",
+      "notation": "standard",
+      "originalId": "09",
+      "sticky": "",
+      "textColor": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( harmonogramStyle.color(currentRow[\"09\"]))) :  harmonogramStyle.color(currentRow[\"09\"]) })()}}",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "_10": {
+      "alias": "10",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( harmonogramStyle.bg(currentRow[\"10\"]))) :  harmonogramStyle.bg(currentRow[\"10\"]) })()}}",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"10\"])) : 10 })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "CENTER",
+      "id": "_10",
+      "index": 0,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "10",
+      "notation": "standard",
+      "originalId": "10",
+      "sticky": "",
+      "textColor": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( harmonogramStyle.color(currentRow[\"10\"]))) :  harmonogramStyle.color(currentRow[\"10\"]) })()}}",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "_11": {
+      "alias": "11",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( harmonogramStyle.bg(currentRow[\"11\"]))) :  harmonogramStyle.bg(currentRow[\"11\"]) })()}}",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"11\"])) : 11 })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "CENTER",
+      "id": "_11",
+      "index": 1,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "11",
+      "notation": "standard",
+      "originalId": "11",
+      "sticky": "",
+      "textColor": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( harmonogramStyle.color(currentRow[\"11\"]))) :  harmonogramStyle.color(currentRow[\"11\"]) })()}}",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "_12": {
+      "alias": "12",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( harmonogramStyle.bg(currentRow[\"12\"]))) :  harmonogramStyle.bg(currentRow[\"12\"]) })()}}",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"12\"])) : 12 })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "CENTER",
+      "id": "_12",
+      "index": 2,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "12",
+      "notation": "standard",
+      "originalId": "12",
+      "sticky": "",
+      "textColor": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( harmonogramStyle.color(currentRow[\"12\"]))) :  harmonogramStyle.color(currentRow[\"12\"]) })()}}",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "_13": {
+      "alias": "13",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( harmonogramStyle.bg(currentRow[\"13\"]))) :  harmonogramStyle.bg(currentRow[\"13\"]) })()}}",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"13\"])) : 13 })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "CENTER",
+      "id": "_13",
+      "index": 3,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "13",
+      "notation": "standard",
+      "originalId": "13",
+      "sticky": "",
+      "textColor": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( harmonogramStyle.color(currentRow[\"13\"]))) :  harmonogramStyle.color(currentRow[\"13\"]) })()}}",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "_14": {
+      "alias": "14",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( harmonogramStyle.bg(currentRow[\"14\"]))) :  harmonogramStyle.bg(currentRow[\"14\"]) })()}}",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"14\"])) : 14 })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "CENTER",
+      "id": "_14",
+      "index": 4,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "14",
+      "notation": "standard",
+      "originalId": "14",
+      "sticky": "",
+      "textColor": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( harmonogramStyle.color(currentRow[\"14\"]))) :  harmonogramStyle.color(currentRow[\"14\"]) })()}}",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "_15": {
+      "alias": "15",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( harmonogramStyle.bg(currentRow[\"15\"]))) :  harmonogramStyle.bg(currentRow[\"15\"]) })()}}",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"15\"])) : 15 })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "CENTER",
+      "id": "_15",
+      "index": 5,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "15",
+      "notation": "standard",
+      "originalId": "15",
+      "sticky": "",
+      "textColor": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( harmonogramStyle.color(currentRow[\"15\"]))) :  harmonogramStyle.color(currentRow[\"15\"]) })()}}",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "_16": {
+      "alias": "16",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( harmonogramStyle.bg(currentRow[\"16\"]))) :  harmonogramStyle.bg(currentRow[\"16\"]) })()}}",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"16\"])) : 16 })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "CENTER",
+      "id": "_16",
+      "index": 6,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "16",
+      "notation": "standard",
+      "originalId": "16",
+      "sticky": "",
+      "textColor": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( harmonogramStyle.color(currentRow[\"16\"]))) :  harmonogramStyle.color(currentRow[\"16\"]) })()}}",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "_17": {
+      "alias": "17",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( harmonogramStyle.bg(currentRow[\"17\"]))) :  harmonogramStyle.bg(currentRow[\"17\"]) })()}}",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"17\"])) : 17 })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "CENTER",
+      "id": "_17",
+      "index": 7,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "17",
+      "notation": "standard",
+      "originalId": "17",
+      "sticky": "",
+      "textColor": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( harmonogramStyle.color(currentRow[\"17\"]))) :  harmonogramStyle.color(currentRow[\"17\"]) })()}}",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "_18": {
+      "alias": "18",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( harmonogramStyle.bg(currentRow[\"18\"]))) :  harmonogramStyle.bg(currentRow[\"18\"]) })()}}",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"18\"])) : 18 })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "CENTER",
+      "id": "_18",
+      "index": 8,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "18",
+      "notation": "standard",
+      "originalId": "18",
+      "sticky": "",
+      "textColor": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( harmonogramStyle.color(currentRow[\"18\"]))) :  harmonogramStyle.color(currentRow[\"18\"]) })()}}",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "_19": {
+      "alias": "19",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( harmonogramStyle.bg(currentRow[\"19\"]))) :  harmonogramStyle.bg(currentRow[\"19\"]) })()}}",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"19\"])) : 19 })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "CENTER",
+      "id": "_19",
+      "index": 9,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "19",
+      "notation": "standard",
+      "originalId": "19",
+      "sticky": "",
+      "textColor": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( harmonogramStyle.color(currentRow[\"19\"]))) :  harmonogramStyle.color(currentRow[\"19\"]) })()}}",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "_20": {
+      "alias": "20",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( harmonogramStyle.bg(currentRow[\"20\"]))) :  harmonogramStyle.bg(currentRow[\"20\"]) })()}}",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"20\"])) : 20 })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "CENTER",
+      "id": "_20",
+      "index": 10,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "20",
+      "notation": "standard",
+      "originalId": "20",
+      "sticky": "",
+      "textColor": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( harmonogramStyle.color(currentRow[\"20\"]))) :  harmonogramStyle.color(currentRow[\"20\"]) })()}}",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "_21": {
+      "alias": "21",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( harmonogramStyle.bg(currentRow[\"21\"]))) :  harmonogramStyle.bg(currentRow[\"21\"]) })()}}",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"21\"])) : 21 })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "CENTER",
+      "id": "_21",
+      "index": 11,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "21",
+      "notation": "standard",
+      "originalId": "21",
+      "sticky": "",
+      "textColor": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( harmonogramStyle.color(currentRow[\"21\"]))) :  harmonogramStyle.color(currentRow[\"21\"]) })()}}",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "_22": {
+      "alias": "22",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( harmonogramStyle.bg(currentRow[\"22\"]))) :  harmonogramStyle.bg(currentRow[\"22\"]) })()}}",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"22\"])) : 22 })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "CENTER",
+      "id": "_22",
+      "index": 12,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "22",
+      "notation": "standard",
+      "originalId": "22",
+      "sticky": "",
+      "textColor": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( harmonogramStyle.color(currentRow[\"22\"]))) :  harmonogramStyle.color(currentRow[\"22\"]) })()}}",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "_23": {
+      "alias": "23",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( harmonogramStyle.bg(currentRow[\"23\"]))) :  harmonogramStyle.bg(currentRow[\"23\"]) })()}}",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"23\"])) : 23 })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "CENTER",
+      "id": "_23",
+      "index": 13,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "23",
+      "notation": "standard",
+      "originalId": "23",
+      "sticky": "",
+      "textColor": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( harmonogramStyle.color(currentRow[\"23\"]))) :  harmonogramStyle.color(currentRow[\"23\"]) })()}}",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "_24": {
+      "alias": "24",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( harmonogramStyle.bg(currentRow[\"24\"]))) :  harmonogramStyle.bg(currentRow[\"24\"]) })()}}",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"24\"])) : 24 })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "CENTER",
+      "id": "_24",
+      "index": 14,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "24",
+      "notation": "standard",
+      "originalId": "24",
+      "sticky": "",
+      "textColor": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( harmonogramStyle.color(currentRow[\"24\"]))) :  harmonogramStyle.color(currentRow[\"24\"]) })()}}",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "_25": {
+      "alias": "25",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( harmonogramStyle.bg(currentRow[\"25\"]))) :  harmonogramStyle.bg(currentRow[\"25\"]) })()}}",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"25\"])) : 25 })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "CENTER",
+      "id": "_25",
+      "index": 15,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "25",
+      "notation": "standard",
+      "originalId": "25",
+      "sticky": "",
+      "textColor": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( harmonogramStyle.color(currentRow[\"25\"]))) :  harmonogramStyle.color(currentRow[\"25\"]) })()}}",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "_26": {
+      "alias": "26",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( harmonogramStyle.bg(currentRow[\"26\"]))) :  harmonogramStyle.bg(currentRow[\"26\"]) })()}}",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"26\"])) : 26 })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "CENTER",
+      "id": "_26",
+      "index": 16,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "26",
+      "notation": "standard",
+      "originalId": "26",
+      "sticky": "",
+      "textColor": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( harmonogramStyle.color(currentRow[\"26\"]))) :  harmonogramStyle.color(currentRow[\"26\"]) })()}}",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "_27": {
+      "alias": "27",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( harmonogramStyle.bg(currentRow[\"27\"]))) :  harmonogramStyle.bg(currentRow[\"27\"]) })()}}",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"27\"])) : 27 })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "CENTER",
+      "id": "_27",
+      "index": 17,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "27",
+      "notation": "standard",
+      "originalId": "27",
+      "sticky": "",
+      "textColor": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( harmonogramStyle.color(currentRow[\"27\"]))) :  harmonogramStyle.color(currentRow[\"27\"]) })()}}",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "_28": {
+      "alias": "28",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( harmonogramStyle.bg(currentRow[\"28\"]))) :  harmonogramStyle.bg(currentRow[\"28\"]) })()}}",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"28\"])) : 28 })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "CENTER",
+      "id": "_28",
+      "index": 18,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "28",
+      "notation": "standard",
+      "originalId": "28",
+      "sticky": "",
+      "textColor": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( harmonogramStyle.color(currentRow[\"28\"]))) :  harmonogramStyle.color(currentRow[\"28\"]) })()}}",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "_29": {
+      "alias": "29",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( harmonogramStyle.bg(currentRow[\"29\"]))) :  harmonogramStyle.bg(currentRow[\"29\"]) })()}}",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"29\"])) : 29 })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "CENTER",
+      "id": "_29",
+      "index": 19,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "29",
+      "notation": "standard",
+      "originalId": "29",
+      "sticky": "",
+      "textColor": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( harmonogramStyle.color(currentRow[\"29\"]))) :  harmonogramStyle.color(currentRow[\"29\"]) })()}}",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "_30": {
+      "alias": "30",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( harmonogramStyle.bg(currentRow[\"30\"]))) :  harmonogramStyle.bg(currentRow[\"30\"]) })()}}",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"30\"])) : 30 })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "CENTER",
+      "id": "_30",
+      "index": 20,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "30",
+      "notation": "standard",
+      "originalId": "30",
+      "sticky": "",
+      "textColor": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( harmonogramStyle.color(currentRow[\"30\"]))) :  harmonogramStyle.color(currentRow[\"30\"]) })()}}",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "_31": {
+      "alias": "31",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( harmonogramStyle.bg(currentRow[\"31\"]))) :  harmonogramStyle.bg(currentRow[\"31\"]) })()}}",
+      "columnType": "text",
+      "computedValue": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"31\"])) : 31 })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "CENTER",
+      "id": "_31",
+      "index": 21,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "31",
+      "notation": "standard",
+      "originalId": "31",
+      "sticky": "",
+      "textColor": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => ( harmonogramStyle.color(currentRow[\"31\"]))) :  harmonogramStyle.color(currentRow[\"31\"]) })()}}",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "sort_order": {
+      "alias": "sort_order",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "number",
+      "computedValue": "{{(() => { const tableData = TableHarmonogramPracy.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"sort_order\"])) : sort_order })()}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "CENTER",
+      "id": "sort_order",
+      "index": 22,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": false,
+      "label": "sort_order",
+      "notation": "standard",
+      "originalId": "sort_order",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    }
+  },
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 64,
+  "searchKey": "",
+  "showInlineEditingOptionDropdown": true,
+  "tableData": "{{\n  (getHarmonogram.data || []).filter(row => row.PRACOWNIK)\n}}\t",
+  "textSize": "0.875rem",
+  "topRow": 23,
+  "totalRecordsCount": 0,
+  "type": "TABLE_WIDGET_V2",
+  "variant": "VARIANT3",
+  "version": 2,
+  "verticalAlignment": "CENTER",
+  "widgetId": "n0dddix0f0",
+  "widgetName": "TableHarmonogramPracy"
+}

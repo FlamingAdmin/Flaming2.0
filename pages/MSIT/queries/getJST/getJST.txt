@@ -1,0 +1,16 @@
+SELECT
+  j.gus_kod AS value,
+  CASE
+    WHEN j.typ_jst = 'gmina' THEN
+      j.nazwa_jst || ' - ' || gr.rodzaj_gmi_nazwa
+    ELSE
+      j.nazwa_jst || ' - ' || j.typ_jst
+  END AS label,
+  j.nazwa_jst,
+  j.typ_jst,
+  gr.rodzaj_gmi_nazwa
+FROM jst j
+LEFT JOIN gminy_rodzaje gr
+  ON j.rodzaj_gmi_kod = gr.rodzaj_gmi_kod
+ORDER BY
+  j.nazwa_jst ASC;

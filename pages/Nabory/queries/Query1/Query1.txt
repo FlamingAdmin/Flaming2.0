@@ -1,0 +1,8 @@
+UPDATE nabory
+SET
+  data_naboru = NULLIF(
+    '{{ PickerDateNabor.selectedDate ? moment(PickerDateNabor.selectedDate).format("YYYY-MM-DD") : "" }}',
+    ''
+  )::date
+WHERE id = {{ TableNabory.selectedRow.id }}
+RETURNING id, data_naboru;

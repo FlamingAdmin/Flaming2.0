@@ -1,0 +1,73 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "0.375rem",
+  "bottomRow": 7,
+  "boxShadow": "none",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( \n  appsmith.store.trybNaboru === \"edycja\"\n    ? ((getNabory.data || []).find(row => row.id === appsmith.store.wybranyNaborId)?.opiekun2 || \"\")\n    : \"\"\n))(SelectOpiekun2.options, SelectOpiekun2.serverSideFiltering) }}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "defaultOptionValue"
+    },
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "qonfxnb7xf",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "BOLD",
+  "labelText": "Opiekun 2\n",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 16,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 18,
+  "mobileLeftColumn": 1,
+  "mobileRightColumn": 21,
+  "mobileTopRow": 11,
+  "needsErrorInfo": false,
+  "onOptionChange": "{{ storeValue(\"naborZmieniony\", true) }}",
+  "optionLabel": "label",
+  "optionValue": "value",
+  "originalBottomRow": 67,
+  "originalTopRow": 60,
+  "parentColumnSpace": 12.40625,
+  "parentId": "2tolh2p0hz",
+  "parentRowSpace": 10,
+  "placeholderText": "Wybierz opiekuna",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 32,
+  "serverSideFiltering": false,
+  "sourceData": "{{\n  [\n    { label: \"Brak\", value: \"Brak\" },\n    ...(getPracownicy.data || []).map(row => ({\n      label: row.imie,\n      value: row.imie\n    }))\n  ]\n}}",
+  "topRow": 0,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "rsmhkh90fz",
+  "widgetName": "SelectOpiekun2"
+}

@@ -1,0 +1,236 @@
+WITH dane AS (
+  SELECT *
+  FROM jsonb_to_record(
+    '{{ JSON.stringify(TableEdycjaDni.tableData[0] || {}) }}'::jsonb
+  ) AS x(
+    "01" text, "02" text, "03" text, "04" text, "05" text,
+    "06" text, "07" text, "08" text, "09" text, "10" text,
+    "11" text, "12" text, "13" text, "14" text, "15" text,
+    "16" text, "17" text, "18" text, "19" text, "20" text,
+    "21" text, "22" text, "23" text, "24" text, "25" text,
+    "26" text, "27" text, "28" text, "29" text, "30" text,
+    "31" text
+  )
+)
+UPDATE harmonogram_pracy
+SET
+  dzien_1 = CASE
+    WHEN COALESCE(dzien_1, '') NOT IN ('', 'W5', 'Ś', 'N', 'DW')
+     AND COALESCE((SELECT "01" FROM dane), '') NOT IN ('', 'W5', 'Ś', 'N', 'DW')
+    THEN (SELECT "01" FROM dane)
+    ELSE dzien_1
+  END,
+
+  dzien_2 = CASE
+    WHEN COALESCE(dzien_2, '') NOT IN ('', 'W5', 'Ś', 'N', 'DW')
+     AND COALESCE((SELECT "02" FROM dane), '') NOT IN ('', 'W5', 'Ś', 'N', 'DW')
+    THEN (SELECT "02" FROM dane)
+    ELSE dzien_2
+  END,
+
+  dzien_3 = CASE
+    WHEN COALESCE(dzien_3, '') NOT IN ('', 'W5', 'Ś', 'N', 'DW')
+     AND COALESCE((SELECT "03" FROM dane), '') NOT IN ('', 'W5', 'Ś', 'N', 'DW')
+    THEN (SELECT "03" FROM dane)
+    ELSE dzien_3
+  END,
+
+  dzien_4 = CASE
+    WHEN COALESCE(dzien_4, '') NOT IN ('', 'W5', 'Ś', 'N', 'DW')
+     AND COALESCE((SELECT "04" FROM dane), '') NOT IN ('', 'W5', 'Ś', 'N', 'DW')
+    THEN (SELECT "04" FROM dane)
+    ELSE dzien_4
+  END,
+
+  dzien_5 = CASE
+    WHEN COALESCE(dzien_5, '') NOT IN ('', 'W5', 'Ś', 'N', 'DW')
+     AND COALESCE((SELECT "05" FROM dane), '') NOT IN ('', 'W5', 'Ś', 'N', 'DW')
+    THEN (SELECT "05" FROM dane)
+    ELSE dzien_5
+  END,
+
+  dzien_6 = CASE
+    WHEN COALESCE(dzien_6, '') NOT IN ('', 'W5', 'Ś', 'N', 'DW')
+     AND COALESCE((SELECT "06" FROM dane), '') NOT IN ('', 'W5', 'Ś', 'N', 'DW')
+    THEN (SELECT "06" FROM dane)
+    ELSE dzien_6
+  END,
+
+  dzien_7 = CASE
+    WHEN COALESCE(dzien_7, '') NOT IN ('', 'W5', 'Ś', 'N', 'DW')
+     AND COALESCE((SELECT "07" FROM dane), '') NOT IN ('', 'W5', 'Ś', 'N', 'DW')
+    THEN (SELECT "07" FROM dane)
+    ELSE dzien_7
+  END,
+
+  dzien_8 = CASE
+    WHEN COALESCE(dzien_8, '') NOT IN ('', 'W5', 'Ś', 'N', 'DW')
+     AND COALESCE((SELECT "08" FROM dane), '') NOT IN ('', 'W5', 'Ś', 'N', 'DW')
+    THEN (SELECT "08" FROM dane)
+    ELSE dzien_8
+  END,
+
+  dzien_9 = CASE
+    WHEN COALESCE(dzien_9, '') NOT IN ('', 'W5', 'Ś', 'N', 'DW')
+     AND COALESCE((SELECT "09" FROM dane), '') NOT IN ('', 'W5', 'Ś', 'N', 'DW')
+    THEN (SELECT "09" FROM dane)
+    ELSE dzien_9
+  END,
+
+  dzien_10 = CASE
+    WHEN COALESCE(dzien_10, '') NOT IN ('', 'W5', 'Ś', 'N', 'DW')
+     AND COALESCE((SELECT "10" FROM dane), '') NOT IN ('', 'W5', 'Ś', 'N', 'DW')
+    THEN (SELECT "10" FROM dane)
+    ELSE dzien_10
+  END,
+
+  dzien_11 = CASE
+    WHEN COALESCE(dzien_11, '') NOT IN ('', 'W5', 'Ś', 'N', 'DW')
+     AND COALESCE((SELECT "11" FROM dane), '') NOT IN ('', 'W5', 'Ś', 'N', 'DW')
+    THEN (SELECT "11" FROM dane)
+    ELSE dzien_11
+  END,
+
+  dzien_12 = CASE
+    WHEN COALESCE(dzien_12, '') NOT IN ('', 'W5', 'Ś', 'N', 'DW')
+     AND COALESCE((SELECT "12" FROM dane), '') NOT IN ('', 'W5', 'Ś', 'N', 'DW')
+    THEN (SELECT "12" FROM dane)
+    ELSE dzien_12
+  END,
+
+  dzien_13 = CASE
+    WHEN COALESCE(dzien_13, '') NOT IN ('', 'W5', 'Ś', 'N', 'DW')
+     AND COALESCE((SELECT "13" FROM dane), '') NOT IN ('', 'W5', 'Ś', 'N', 'DW')
+    THEN (SELECT "13" FROM dane)
+    ELSE dzien_13
+  END,
+
+  dzien_14 = CASE
+    WHEN COALESCE(dzien_14, '') NOT IN ('', 'W5', 'Ś', 'N', 'DW')
+     AND COALESCE((SELECT "14" FROM dane), '') NOT IN ('', 'W5', 'Ś', 'N', 'DW')
+    THEN (SELECT "14" FROM dane)
+    ELSE dzien_14
+  END,
+
+  dzien_15 = CASE
+    WHEN COALESCE(dzien_15, '') NOT IN ('', 'W5', 'Ś', 'N', 'DW')
+     AND COALESCE((SELECT "15" FROM dane), '') NOT IN ('', 'W5', 'Ś', 'N', 'DW')
+    THEN (SELECT "15" FROM dane)
+    ELSE dzien_15
+  END,
+
+  dzien_16 = CASE
+    WHEN COALESCE(dzien_16, '') NOT IN ('', 'W5', 'Ś', 'N', 'DW')
+     AND COALESCE((SELECT "16" FROM dane), '') NOT IN ('', 'W5', 'Ś', 'N', 'DW')
+    THEN (SELECT "16" FROM dane)
+    ELSE dzien_16
+  END,
+
+  dzien_17 = CASE
+    WHEN COALESCE(dzien_17, '') NOT IN ('', 'W5', 'Ś', 'N', 'DW')
+     AND COALESCE((SELECT "17" FROM dane), '') NOT IN ('', 'W5', 'Ś', 'N', 'DW')
+    THEN (SELECT "17" FROM dane)
+    ELSE dzien_17
+  END,
+
+  dzien_18 = CASE
+    WHEN COALESCE(dzien_18, '') NOT IN ('', 'W5', 'Ś', 'N', 'DW')
+     AND COALESCE((SELECT "18" FROM dane), '') NOT IN ('', 'W5', 'Ś', 'N', 'DW')
+    THEN (SELECT "18" FROM dane)
+    ELSE dzien_18
+  END,
+
+  dzien_19 = CASE
+    WHEN COALESCE(dzien_19, '') NOT IN ('', 'W5', 'Ś', 'N', 'DW')
+     AND COALESCE((SELECT "19" FROM dane), '') NOT IN ('', 'W5', 'Ś', 'N', 'DW')
+    THEN (SELECT "19" FROM dane)
+    ELSE dzien_19
+  END,
+
+  dzien_20 = CASE
+    WHEN COALESCE(dzien_20, '') NOT IN ('', 'W5', 'Ś', 'N', 'DW')
+     AND COALESCE((SELECT "20" FROM dane), '') NOT IN ('', 'W5', 'Ś', 'N', 'DW')
+    THEN (SELECT "20" FROM dane)
+    ELSE dzien_20
+  END,
+
+  dzien_21 = CASE
+    WHEN COALESCE(dzien_21, '') NOT IN ('', 'W5', 'Ś', 'N', 'DW')
+     AND COALESCE((SELECT "21" FROM dane), '') NOT IN ('', 'W5', 'Ś', 'N', 'DW')
+    THEN (SELECT "21" FROM dane)
+    ELSE dzien_21
+  END,
+
+  dzien_22 = CASE
+    WHEN COALESCE(dzien_22, '') NOT IN ('', 'W5', 'Ś', 'N', 'DW')
+     AND COALESCE((SELECT "22" FROM dane), '') NOT IN ('', 'W5', 'Ś', 'N', 'DW')
+    THEN (SELECT "22" FROM dane)
+    ELSE dzien_22
+  END,
+
+  dzien_23 = CASE
+    WHEN COALESCE(dzien_23, '') NOT IN ('', 'W5', 'Ś', 'N', 'DW')
+     AND COALESCE((SELECT "23" FROM dane), '') NOT IN ('', 'W5', 'Ś', 'N', 'DW')
+    THEN (SELECT "23" FROM dane)
+    ELSE dzien_23
+  END,
+
+  dzien_24 = CASE
+    WHEN COALESCE(dzien_24, '') NOT IN ('', 'W5', 'Ś', 'N', 'DW')
+     AND COALESCE((SELECT "24" FROM dane), '') NOT IN ('', 'W5', 'Ś', 'N', 'DW')
+    THEN (SELECT "24" FROM dane)
+    ELSE dzien_24
+  END,
+
+  dzien_25 = CASE
+    WHEN COALESCE(dzien_25, '') NOT IN ('', 'W5', 'Ś', 'N', 'DW')
+     AND COALESCE((SELECT "25" FROM dane), '') NOT IN ('', 'W5', 'Ś', 'N', 'DW')
+    THEN (SELECT "25" FROM dane)
+    ELSE dzien_25
+  END,
+
+  dzien_26 = CASE
+    WHEN COALESCE(dzien_26, '') NOT IN ('', 'W5', 'Ś', 'N', 'DW')
+     AND COALESCE((SELECT "26" FROM dane), '') NOT IN ('', 'W5', 'Ś', 'N', 'DW')
+    THEN (SELECT "26" FROM dane)
+    ELSE dzien_26
+  END,
+
+  dzien_27 = CASE
+    WHEN COALESCE(dzien_27, '') NOT IN ('', 'W5', 'Ś', 'N', 'DW')
+     AND COALESCE((SELECT "27" FROM dane), '') NOT IN ('', 'W5', 'Ś', 'N', 'DW')
+    THEN (SELECT "27" FROM dane)
+    ELSE dzien_27
+  END,
+
+  dzien_28 = CASE
+    WHEN COALESCE(dzien_28, '') NOT IN ('', 'W5', 'Ś', 'N', 'DW')
+     AND COALESCE((SELECT "28" FROM dane), '') NOT IN ('', 'W5', 'Ś', 'N', 'DW')
+    THEN (SELECT "28" FROM dane)
+    ELSE dzien_28
+  END,
+
+  dzien_29 = CASE
+    WHEN COALESCE(dzien_29, '') NOT IN ('', 'W5', 'Ś', 'N', 'DW')
+     AND COALESCE((SELECT "29" FROM dane), '') NOT IN ('', 'W5', 'Ś', 'N', 'DW')
+    THEN (SELECT "29" FROM dane)
+    ELSE dzien_29
+  END,
+
+  dzien_30 = CASE
+    WHEN COALESCE(dzien_30, '') NOT IN ('', 'W5', 'Ś', 'N', 'DW')
+     AND COALESCE((SELECT "30" FROM dane), '') NOT IN ('', 'W5', 'Ś', 'N', 'DW')
+    THEN (SELECT "30" FROM dane)
+    ELSE dzien_30
+  END,
+
+  dzien_31 = CASE
+    WHEN COALESCE(dzien_31, '') NOT IN ('', 'W5', 'Ś', 'N', 'DW')
+     AND COALESCE((SELECT "31" FROM dane), '') NOT IN ('', 'W5', 'Ś', 'N', 'DW')
+    THEN (SELECT "31" FROM dane)
+    ELSE dzien_31
+  END
+
+WHERE id = {{ TableHarmonogramPracy.selectedRow.id || TableHarmonogramPracy.selectedRow.ID }}
+
+RETURNING *;

@@ -1,0 +1,10 @@
+SELECT
+  COALESCE(
+    (
+      SELECT ap.populacja::text
+      FROM jst ap
+      WHERE ap.gus_kod::text = {{ this.params.gmina_kod }}
+      LIMIT 1
+    ),
+    'Brak danych'
+  ) AS populacja;

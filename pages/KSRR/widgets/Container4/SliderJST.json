@@ -1,0 +1,53 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "bottomRow": 8,
+  "defaultOptionValue": "0",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "46o3elvniy",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "",
+  "labelText": "",
+  "labelTextSize": "1.25rem",
+  "labelWidth": 5,
+  "leftColumn": 5,
+  "mobileBottomRow": 18,
+  "mobileLeftColumn": 0,
+  "mobileRightColumn": 13,
+  "mobileTopRow": 10,
+  "needsErrorInfo": false,
+  "options": [
+    {
+      "label": "GMINY",
+      "value": "0"
+    },
+    {
+      "label": "MIASTA",
+      "value": "1"
+    }
+  ],
+  "parentColumnSpace": 30.25,
+  "parentId": "ebe551fa9g",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 58,
+  "shouldScroll": false,
+  "shouldTruncate": false,
+  "showMarksLabel": true,
+  "sliderSize": "m",
+  "topRow": 3,
+  "type": "CATEGORY_SLIDER_WIDGET",
+  "version": 1,
+  "widgetId": "tmecy5ooj4",
+  "widgetName": "SliderJST"
+}

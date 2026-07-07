@@ -1,0 +1,14 @@
+SELECT
+  CASE
+    WHEN m.rodzaj_miejsc_kod::integer <> 96
+      THEN 'Nie dotyczy'
+    WHEN EXISTS (
+      SELECT 1
+      FROM ksrr_miasta km
+      WHERE km.sym = m.sym
+    )
+      THEN 'Tak'
+    ELSE 'Nie'
+  END AS czy_ksrr
+FROM miejscowosci m
+WHERE m.sym::text = '{{ appsmith.store.wybranaMiejscowosc.sym || "" }}';

@@ -1,0 +1,4 @@
+UPDATE bazowa_p
+SET wartosc = {{ InputBazowa.text }}::NUMERIC
+WHERE rok = {{ SelectRok.selectedOptionValue }}::INTEGER
+RETURNING rok, wartosc;

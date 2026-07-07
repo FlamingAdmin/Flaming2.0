@@ -1,0 +1,13 @@
+SELECT DISTINCT
+  obszary.nazwa_ob,
+  obszary.symbol_ob,
+  obszary.id AS obszar_id
+FROM obszary
+INNER JOIN wykaz_obszary 
+  ON obszary.id = wykaz_obszary.obszar_id
+INNER JOIN eksperci 
+  ON eksperci.id = wykaz_obszary.ekspert_id
+WHERE
+  eksperci.id = {{ eksperciTable.selectedRow.ekspert_id || 0 }}
+ORDER BY
+  obszary.symbol_ob;

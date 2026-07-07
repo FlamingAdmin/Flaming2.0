@@ -1,0 +1,26 @@
+SELECT
+  id,
+  nr_naboru,
+  typ_naboru,
+  opiekun1,
+  opiekun2,
+  TO_CHAR(data_naboru, 'YYYY-MM-DD') AS data_naboru,
+  ile_zlozonych,
+  TO_CHAR(data_przekazania, 'YYYY-MM-DD') AS data_przekazania,
+  ile_przekazanych,
+  TO_CHAR(data_oceny, 'YYYY-MM-DD') AS data_oceny,
+  TO_CHAR(data_protokolu, 'YYYY-MM-DD') AS data_protokolu,
+  nr_uchwaly,
+  TO_CHAR(data_uchwaly, 'YYYY-MM-DD') AS data_uchwaly,
+  rezerwa,
+  uwagi,
+  czas_oceny,
+  typ_projektu,
+  status,
+  budzet_panstwa,
+  stawka_panel,
+  stawka_fin,
+  stawka_omw,
+  stawka_om
+FROM nabory 
+ORDER BY nr_naboru

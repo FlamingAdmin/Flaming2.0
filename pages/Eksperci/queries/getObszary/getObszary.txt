@@ -1,0 +1,1 @@
+SELECT id, symbol_ob, nazwa_ob FROM public.obszary ORDER BY symbol_ob ASC;

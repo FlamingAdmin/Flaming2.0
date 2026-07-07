@@ -1,0 +1,77 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "0.375rem",
+  "bottomRow": 7,
+  "boxShadow": "none",
+  "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( \n  appsmith.store.trybNaboru === \"edycja\"\n    ? ((getNabory.data || []).find(row => row.id === appsmith.store.wybranyNaborId)?.typ_naboru || \"\")\n    : \"\"\n))(SelectTypNaboru.options, SelectTypNaboru.serverSideFiltering) }}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "defaultOptionValue"
+    },
+    {
+      "key": "labelTextColor"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "labelTextColor"
+    },
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": true,
+  "isVisible": true,
+  "key": "qonfxnb7xf",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "BOLD",
+  "labelText": "Typ naboru *",
+  "labelTextColor": "{{\n  SelectTypNaboru.selectedOptionValue\n    ? \"#4a5768\"\n    : \"#DC2626\"\n}}",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 16,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 450,
+  "mobileBottomRow": 18,
+  "mobileLeftColumn": 1,
+  "mobileRightColumn": 21,
+  "mobileTopRow": 11,
+  "needsErrorInfo": false,
+  "onOptionChange": "{{ storeValue(\"naborZmieniony\", true) }}",
+  "optionLabel": "label",
+  "optionValue": "value",
+  "originalBottomRow": 12,
+  "originalTopRow": 5,
+  "parentColumnSpace": 12.40625,
+  "parentId": "mp3rd0wiw8",
+  "parentRowSpace": 10,
+  "placeholderText": "Wybierz typ naboru",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 33,
+  "serverSideFiltering": false,
+  "sourceData": "[\n  {\n    \"label\": \"konkurencyjny\",\n    \"value\": \"konkurencyjny\"\n  },\n  {\n    \"label\": \"niekonkurencyjny\",\n    \"value\": \"niekonkurencyjny\"\n  }\n]",
+  "topRow": 0,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "ppoobcokxy",
+  "widgetName": "SelectTypNaboru"
+}
