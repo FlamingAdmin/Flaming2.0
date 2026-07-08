@@ -94,6 +94,30 @@ export default {
 
   isUser() {
     return appsmith.store.session?.user?.role?.code === "USER";
+  },
+
+  async requireAdmin() {
+
+    const sessionOk = await this.checkSession();
+
+    if (!sessionOk) {
+      return false;
+    }
+
+    if (!this.isAdmin()) {
+
+      showAlert(
+        "Brak uprawnień do tej strony.",
+        "warning"
+      );
+
+      await navigateTo("Home");
+
+      return false;
+    }
+
+    return true;
+
   }
 
 }

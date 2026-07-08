@@ -38,12 +38,12 @@
     "role",
     "role_code"
   ],
-  "columnUpdatedAt": 1783463384458,
+  "columnUpdatedAt": 1783519506899,
   "columnWidthMap": {
     "id": 60,
-    "mail": 263,
-    "name": 248,
-    "role": 268
+    "mail": 278,
+    "name": 243,
+    "role": 211
   },
   "compactMode": "DEFAULT",
   "customIsLoading": false,
@@ -271,7 +271,7 @@
   },
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 49,
+  "rightColumn": 43,
   "searchKey": "",
   "serverSidePaginationEnabled": true,
   "tableData": "{{getUsers.data}}",
