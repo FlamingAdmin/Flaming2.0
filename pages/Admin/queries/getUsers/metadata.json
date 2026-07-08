@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT\n    u.id,\n    u.name,\n    u.mail,\n    r.name AS role,\n    r.code AS role_code\nFROM users u\nJOIN roles r\n    ON r.id = u.role_id\nORDER BY\n    u.name ASC;",
+      "body": "SELECT\n    u.id,\n    u.name,\n    u.mail,\n    u.role_id,\n    r.name AS role,\n    r.code AS role_code\nFROM users u\nJOIN roles r\n    ON r.id = u.role_id\nWHERE\n    u.active = true\nORDER BY\n    u.name;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

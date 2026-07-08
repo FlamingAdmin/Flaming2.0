@@ -10,4 +10,8 @@ JOIN roles r
     ON r.id = u.role_id
 WHERE
     u.mail = {{ mail_input.text }}
-    AND u.password = crypt({{ password_input.text }}, u.password);
+    AND u.active = true
+    AND u.password = crypt(
+        {{ password_input.text }},
+        u.password
+    );
