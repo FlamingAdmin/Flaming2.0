@@ -1,11 +1,20 @@
 {
-  "gitSyncId": "6a4d033ae3824d264e76aad9_3152f9c1-7ccc-4da4-b27a-3ef2db9c269c",
+  "gitSyncId": "6a4d033ae3824d264e76aad9_d624aeae-057c-4081-a9a2-a43c62fd91a7",
   "id": "Harmonogram pracy_Auth",
   "unpublishedCollection": {
     "name": "Auth",
     "pageId": "Harmonogram pracy",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "variables": []
+    "variables": [
+      {
+        "name": "sessionTimer",
+        "value": "null"
+      },
+      {
+        "name": "logoutTimer",
+        "value": "null"
+      }
+    ]
   }
 }
