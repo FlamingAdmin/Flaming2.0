@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "6a4d033ae3824d264e76aad9_96322d6b-fbe6-40e6-9b11-b58ccddc92ca",
-  "id": "Admin_authCheckSession",
+  "gitSyncId": "6a52d68992602c370020463b_d6d4f21a-89d2-4671-ab70-ce8f87cdeec4",
+  "id": "Admin_updateLoginSettings",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT\n    expires_at\nFROM sessions\nWHERE\n    token = {{ appsmith.store.session.token }}\n    AND active = true\n    AND expires_at > CURRENT_TIMESTAMP;",
+      "body": "UPDATE app_settings\nSET\n    value = CASE\n        WHEN code = 'LOGIN_MAX_ATTEMPTS'\n            THEN {{ SelectLoginAttempts.selectedOptionValue }}\n        WHEN code = 'LOGIN_LOCK_TIME'\n            THEN {{ SelectBlockadeTime.selectedOptionValue }}\n    END\nWHERE\n    code IN\n    (\n        'LOGIN_MAX_ATTEMPTS',\n        'LOGIN_LOCK_TIME'\n    );",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "name": "authCheckSession",
+    "name": "updateLoginSettings",
     "pageId": "Admin",
-    "runBehaviour": "AUTOMATIC",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

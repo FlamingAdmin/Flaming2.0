@@ -1,11 +1,11 @@
 {
-  "gitSyncId": "6a4d033ae3824d264e76aad9_96322d6b-fbe6-40e6-9b11-b58ccddc92ca",
-  "id": "Admin_authCheckSession",
+  "gitSyncId": "6a52d68992602c370020463b_1f14c092-d4a6-4547-b775-e16213a5e92c",
+  "id": "Logowanie_authCheckLoginLock",
   "pluginId": "postgres-plugin",
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT\n    expires_at\nFROM sessions\nWHERE\n    token = {{ appsmith.store.session.token }}\n    AND active = true\n    AND expires_at > CURRENT_TIMESTAMP;",
+      "body": "SELECT\n    id,\n    failed_login_attempts,\n    login_locked_until,\n    (\n        login_locked_until IS NOT NULL\n        AND login_locked_until > CURRENT_TIMESTAMP\n    ) AS is_locked\nFROM users\nWHERE\n    mail = {{ mail_input.text }}\n    AND active = true;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -27,9 +27,9 @@
         "key": "body"
       }
     ],
-    "name": "authCheckSession",
-    "pageId": "Admin",
-    "runBehaviour": "AUTOMATIC",
+    "name": "authCheckLoginLock",
+    "pageId": "Logowanie",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }
