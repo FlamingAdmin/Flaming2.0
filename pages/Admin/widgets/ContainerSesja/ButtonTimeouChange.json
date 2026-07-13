@@ -42,7 +42,7 @@
   "renderMode": "CANVAS",
   "resetFormOnClick": false,
   "responsiveBehavior": "hug",
-  "rightColumn": 63,
+  "rightColumn": 64,
   "text": "ZMIEŃ",
   "topRow": 3,
   "type": "BUTTON_WIDGET",

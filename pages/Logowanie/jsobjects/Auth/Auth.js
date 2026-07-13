@@ -117,7 +117,7 @@ export default {
 
       if (authLogin.data[0].must_change_password) {
 
-        navigateTo("Zmiana hasla");
+        navigateTo("Zmiana hasła");
 
       } else {
 
