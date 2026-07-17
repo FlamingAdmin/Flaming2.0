@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 33,
+  "bottomRow": 34,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
   "buttonVariant": "TERTIARY",
@@ -43,7 +43,7 @@
   "responsiveBehavior": "hug",
   "rightColumn": 13,
   "tooltip": "Odśwież dane tabeli",
-  "topRow": 29,
+  "topRow": 30,
   "type": "ICON_BUTTON_WIDGET",
   "version": 1,
   "widgetId": "p1owzjuvuh",
